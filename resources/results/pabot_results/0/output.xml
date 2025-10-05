@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-10-06T02:38:37.336237" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\User\Desktop\HomeTest\resources\Tests">
+<suite id="s1-s1" name="TestCase1 Autocomplete" source="C:\Users\User\Desktop\HomeTest\resources\Tests\TestCase1_Autocomplete.robot">
+<test id="s1-s1-t1" name="Test Case 1_Autocomplete" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:37.547725" level="INFO">Opening browser 'firefox' to base url 'https://training-platform2.doppio-tech.com/'.</msg>
+<arg>${WEB_URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-06T02:38:37.547494" elapsed="6.241009"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-10-06T02:38:43.788870" elapsed="0.010183"/>
+</kw>
+<kw name="Account button" owner="home_pages">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:43.800775" level="INFO">Clicking button 'css:[id="btn-account"]'.</msg>
+<arg>${HOME_ACCOUNTBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T02:38:43.800298" elapsed="0.135621"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:43.799592" elapsed="0.136553"/>
+</kw>
+<kw name="Nav account link" owner="home_pages">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:43.937467" level="INFO">Clicking element 'css:[id="nav-account-menu"]'.</msg>
+<arg>${NAVACCOUNTMENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T02:38:43.937090" elapsed="0.095067"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:43.936465" elapsed="0.095879"/>
+</kw>
+<kw name="Email" owner="login_pages">
+<kw name="Shadow root email" owner="login_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:44.034217" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="signin-email"]');el.value = "Morty.smt@gmail.com";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="signin-email"]');</arg>
+<arg>el.value = "${email}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:44.033627" elapsed="0.014932"/>
+</kw>
+<arg>${EMAIL}</arg>
+<status status="PASS" start="2025-10-06T02:38:44.033170" elapsed="0.015552"/>
+</kw>
+<arg>${TEST_EMAIL}</arg>
+<status status="PASS" start="2025-10-06T02:38:44.032615" elapsed="0.016197"/>
+</kw>
+<kw name="Password" owner="login_pages">
+<kw name="Shadow root password" owner="login_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:44.050540" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="signin-password"]');el.value = "Morty007";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="signin-password"]');</arg>
+<arg>el.value = "${password}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:44.049951" elapsed="0.008983"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-06T02:38:44.049559" elapsed="0.009526"/>
+</kw>
+<arg>${TEST_PASSWORD}</arg>
+<status status="PASS" start="2025-10-06T02:38:44.049023" elapsed="0.010131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:45.060156" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:44.059315" elapsed="1.000968"/>
+</kw>
+<kw name="Remember" owner="login_pages">
+<kw name="Shadow root remember button" owner="login_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:45.061406" level="INFO">Executing JavaScript:
+document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="signin-remember"]').click();
+Without any arguments.</msg>
+<arg>document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="signin-remember"]')</arg>
+<arg>.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:45.061102" elapsed="0.003610"/>
+</kw>
+<arg>${LOGIN_REMEMBERME}</arg>
+<status status="PASS" start="2025-10-06T02:38:45.060843" elapsed="0.003975"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:45.060464" elapsed="0.004400"/>
+</kw>
+<kw name="Submit login" owner="login_pages">
+<kw name="Shadow root login button" owner="login_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:45.065850" level="INFO">Executing JavaScript:
+document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[id="btn-signin"]').click();
+Without any arguments.</msg>
+<arg>document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[id="btn-signin"]')</arg>
+<arg>.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:45.065567" elapsed="0.006361"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-10-06T02:38:45.065330" elapsed="0.006718"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:45.064998" elapsed="0.007096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:46.072766" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:45.072222" elapsed="1.000647"/>
+</kw>
+<kw name="Search product" owner="home_pages">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:46.073589" level="INFO">Typing text 'mug' into text field 'css:[id="nav-search-input"]'.</msg>
+<arg>${HOME_SEARCHBOX}</arg>
+<arg>${SEARCH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T02:38:46.073381" elapsed="0.037755"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${WAITAUTOCOMPLETE}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T02:38:46.111332" elapsed="0.411010"/>
+</kw>
+<arg>mug</arg>
+<status status="PASS" start="2025-10-06T02:38:46.073047" elapsed="0.449394"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:47.523041" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:46.522593" elapsed="1.000564"/>
+</kw>
+<kw name="Click autocomplete" owner="home_pages">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:47.524004" level="INFO">Clicking element 'xpath=//a[.//span[normalize-space(.)="Ceramic Mug"]]'.</msg>
+<arg>${WAITAUTOCOMPLETE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T02:38:47.523785" elapsed="0.066157"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:47.523390" elapsed="0.066711"/>
+</kw>
+<kw name="Select product color" owner="product_detail_pages">
+<kw name="Shadow root color button" owner="product_detail_pages">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Shadow root click button" owner="product_detail_pages">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:47.592253" level="INFO">${js} = const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="pd-opt-color-Gray"]`); if (el) el.click(); else throw new Error("Color button not found!");</msg>
+<var>${js}</var>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector(`[data-testid="pd-opt-color-${COLOR}"]`);</arg>
+<arg>if (el) el.click(); else throw new Error("Color button not found!");</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-10-06T02:38:47.592048" elapsed="0.000232"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:47.592721" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="pd-opt-color-Gray"]`); if (el) el.click(); else throw new Error("Color button not found!");
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:47.639543" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T02:38:47.639801" level="FAIL">JavascriptException: Message: Error: Color button not found!
+Stacktrace:
+@https://training-platform2.doppio-tech.com/:2:167
+@https://training-platform2.doppio-tech.com/:3:8
+</msg>
+<arg>${js}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-10-06T02:38:47.592385" elapsed="0.051059">JavascriptException: Message: Error: Color button not found!
+Stacktrace:
+@https://training-platform2.doppio-tech.com/:2:167
+@https://training-platform2.doppio-tech.com/:3:8
+</status>
+</kw>
+<arg>${COLOR}</arg>
+<status status="FAIL" start="2025-10-06T02:38:47.591774" elapsed="0.052128">JavascriptException: Message: Error: Color button not found!
+Stacktrace:
+@https://training-platform2.doppio-tech.com/:2:167
+@https://training-platform2.doppio-tech.com/:3:8
+</status>
+</kw>
+<kw name="Shadow root click button" owner="product_detail_pages">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:48.146901" level="INFO">${js} = const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="pd-opt-color-Gray"]`); if (el) el.click(); else throw new Error("Color button not found!");</msg>
+<var>${js}</var>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector(`[data-testid="pd-opt-color-${COLOR}"]`);</arg>
+<arg>if (el) el.click(); else throw new Error("Color button not found!");</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.145140" elapsed="0.001813"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:48.147692" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="pd-opt-color-Gray"]`); if (el) el.click(); else throw new Error("Color button not found!");
+Without any arguments.</msg>
+<arg>${js}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.147133" elapsed="0.005521"/>
+</kw>
+<arg>${COLOR}</arg>
+<status status="PASS" start="2025-10-06T02:38:48.144508" elapsed="0.008263"/>
+</kw>
+<arg>10x</arg>
+<arg>0.5s</arg>
+<arg>Shadow root click button</arg>
+<arg>${COLOR}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T02:38:47.591390" elapsed="0.561475"/>
+</kw>
+<arg>${COLOR}</arg>
+<status status="PASS" start="2025-10-06T02:38:47.590847" elapsed="0.562096"/>
+</kw>
+<arg>Gray</arg>
+<status status="PASS" start="2025-10-06T02:38:47.590330" elapsed="0.562670"/>
+</kw>
+<kw name="Shadow root input qty" owner="product_detail_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:48.154090" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="pd-qty-input"]');if (el) {el.value = "3";el.dispatchEvent(new Event('input', { bubbles: true }));} else {throw new Error("Quantity input not found!");}
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="pd-qty-input"]');</arg>
+<arg>if (el) {</arg>
+<arg>el.value = "${VALUE}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("Quantity input not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.153648" elapsed="0.005048"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2025-10-06T02:38:48.153203" elapsed="0.005629"/>
+</kw>
+<kw name="Add to cart button" owner="product_detail_pages">
+<kw name="Shadow root add to cart button" owner="product_detail_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:48.160208" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[id="btn-add-to-cart"]');if (el) el.click(); else throw new Error("Add to cart button not found!");
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[id="btn-add-to-cart"]');</arg>
+<arg>if (el) el.click(); else throw new Error("Add to cart button not found!");</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.159867" elapsed="0.003858"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:48.159574" elapsed="0.004242"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:48.159065" elapsed="0.004792"/>
+</kw>
+<kw name="Cart" owner="cart_pages">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:48.164482" level="INFO">Clicking element 'css:[data-testid="nav-cart"]'.</msg>
+<arg>${CART_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.164266" elapsed="0.062773"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:48.163983" elapsed="0.063204"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:49.227673" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:48.227361" elapsed="1.000403"/>
+</kw>
+<kw name="Select all in cart" owner="cart_pages">
+<kw name="Shadow root select all products" owner="cart_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.228757" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('input[data-cart="cart-div0-div1-div0-label0-input0"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('input[data-cart="cart-div0-div1-div0-label0-input0"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.228474" elapsed="0.004307"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.228267" elapsed="0.004623"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.227937" elapsed="0.004995"/>
+</kw>
+<kw name="Proceed to checkout" owner="cart_pages">
+<kw name="Shadow root proceed to checkout" owner="cart_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.234026" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[id="btn-proceed"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[id="btn-proceed"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.233731" elapsed="0.009455"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.233411" elapsed="0.009906"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.233059" elapsed="0.010307"/>
+</kw>
+<kw name="Add new address" owner="cart_pages">
+<kw name="Shadow root add new address" owner="cart_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.244852" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[data-testid="checkout-add-address-toggle"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[data-testid="checkout-add-address-toggle"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.244363" elapsed="0.004014"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.244024" elapsed="0.004446"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:49.243503" elapsed="0.005007"/>
+</kw>
+<kw name="First name" owner="checkout_pages">
+<kw name="Shadow root first name" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.249528" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-first-name"]');el.value = "Morty";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-first-name"]');</arg>
+<arg>el.value = "${firstname}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.249204" elapsed="0.003905"/>
+</kw>
+<arg>${FIRSTNAME}</arg>
+<status status="PASS" start="2025-10-06T02:38:49.248975" elapsed="0.004227"/>
+</kw>
+<arg>Morty</arg>
+<status status="PASS" start="2025-10-06T02:38:49.248638" elapsed="0.004608"/>
+</kw>
+<kw name="Last name" owner="checkout_pages">
+<kw name="Shadow root last name" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.254273" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-last-name"]');el.value = "Smith";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-last-name"]');</arg>
+<arg>el.value = "${lastname}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.253944" elapsed="0.003653"/>
+</kw>
+<arg>${LASTNAME}</arg>
+<status status="PASS" start="2025-10-06T02:38:49.253713" elapsed="0.004023"/>
+</kw>
+<arg>Smith</arg>
+<status status="PASS" start="2025-10-06T02:38:49.253378" elapsed="0.004428"/>
+</kw>
+<kw name="Address detail" owner="checkout_pages">
+<kw name="Shadow root address details" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:49.259175" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-detail"]');el.value = "123 Khonkean University";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-detail"]');</arg>
+<arg>el.value = "${addressdetail}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.258801" elapsed="0.002682"/>
+</kw>
+<arg>${ADDRESSDETAIL}</arg>
+<status status="PASS" start="2025-10-06T02:38:49.258455" elapsed="0.003105"/>
+</kw>
+<arg>123 Khonkean University</arg>
+<status status="PASS" start="2025-10-06T02:38:49.257995" elapsed="0.003608"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:50.262009" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:49.261686" elapsed="1.000492"/>
+</kw>
+<kw name="Select province" owner="checkout_pages">
+<kw name="Shadow root select province" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:50.264325" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-province"]');if (el) {el.value = "Bangkok";el.dispatchEvent(new Event('change', { bubbles: true }));} else {throw new Error("Province input not found!");}
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-province"]');</arg>
+<arg>if (el) {</arg>
+<arg>el.value = "${province}";</arg>
+<arg>el.dispatchEvent(new Event('change', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("Province input not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:50.263753" elapsed="0.006225"/>
+</kw>
+<arg>${PROVINCE}</arg>
+<status status="PASS" start="2025-10-06T02:38:50.263247" elapsed="0.006859"/>
+</kw>
+<arg>Bangkok</arg>
+<status status="PASS" start="2025-10-06T02:38:50.262571" elapsed="0.007585"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:51.270634" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:50.270271" elapsed="1.000458"/>
+</kw>
+<kw name="Select district" owner="checkout_pages">
+<kw name="Shadow root select district" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:51.271877" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-district"]');if (el) {el.value = "Phra Nakhon";el.dispatchEvent(new Event('change', { bubbles: true }));} else {throw new Error("District input not found!");}
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-district"]');</arg>
+<arg>if (el) {</arg>
+<arg>el.value = "${district}";</arg>
+<arg>el.dispatchEvent(new Event('change', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("District input not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:51.271521" elapsed="0.004918"/>
+</kw>
+<arg>${DISTRICT}</arg>
+<status status="PASS" start="2025-10-06T02:38:51.271266" elapsed="0.005346"/>
+</kw>
+<arg>Phra Nakhon</arg>
+<status status="PASS" start="2025-10-06T02:38:51.270905" elapsed="0.005757"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:52.277407" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:51.276819" elapsed="1.000693"/>
+</kw>
+<kw name="Select subdistrict" owner="checkout_pages">
+<kw name="Shadow root select subdistrict" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:52.278690" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-subdistrict"]');if (el) {el.value = "Bang Khun Phrom";el.dispatchEvent(new Event('change', { bubbles: true }));} else {throw new Error("SubDistrict input not found!");}
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-subdistrict"]');</arg>
+<arg>if (el) {</arg>
+<arg>el.value = "${subdistrict}";</arg>
+<arg>el.dispatchEvent(new Event('change', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("SubDistrict input not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:52.278298" elapsed="0.005321"/>
+</kw>
+<arg>${SUBDISTRICT}</arg>
+<status status="PASS" start="2025-10-06T02:38:52.278044" elapsed="0.005769"/>
+</kw>
+<arg>Bang Khun Phrom</arg>
+<status status="PASS" start="2025-10-06T02:38:52.277702" elapsed="0.006194"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:53.284350" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:52.284059" elapsed="1.000389"/>
+</kw>
+<kw name="Postcode" owner="checkout_pages">
+<kw name="Shadow root postcode" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:53.285587" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-form-postal"]');el.value = "10200";el.dispatchEvent(new Event('input', { bubbles: true }));
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-form-postal"]');</arg>
+<arg>el.value = "${postalcode}";</arg>
+<arg>el.dispatchEvent(new Event('input', { bubbles: true }));</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:53.285230" elapsed="0.004572"/>
+</kw>
+<arg>${POSTALCODE}</arg>
+<status status="PASS" start="2025-10-06T02:38:53.284980" elapsed="0.004981"/>
+</kw>
+<arg>10200</arg>
+<status status="PASS" start="2025-10-06T02:38:53.284638" elapsed="0.005402"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:54.290800" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:53.290210" elapsed="1.000723"/>
+</kw>
+<kw name="Set as default" owner="checkout_pages">
+<kw name="Shadow root set as default" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:54.294708" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('input[data-testid="checkout-form-default"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('input[data-testid="checkout-form-default"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.291892" elapsed="0.005810"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.291593" elapsed="0.006207"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.291172" elapsed="0.006672"/>
+</kw>
+<kw name="Save address" owner="checkout_pages">
+<kw name="Shadow root save address" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:54.299030" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[id="btn-save-address"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[id="btn-save-address"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.298674" elapsed="0.003057"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.298390" elapsed="0.003481"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.297997" elapsed="0.003939"/>
+</kw>
+<kw name="Payment" owner="checkout_pages">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Shadow root click payment" owner="checkout_pages">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:54.303200" level="INFO">${js} = const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="checkout-pay-qr"]`); if (el) el.click(); else throw new Error("Payment Radio not found!");</msg>
+<var>${js}</var>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector(`[data-testid="checkout-pay-${PAYMENT}"]`);</arg>
+<arg>if (el) el.click(); else throw new Error("Payment Radio not found!");</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.303013" elapsed="0.000213"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:54.303641" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]') .shadowRoot.querySelector(`[data-testid="checkout-pay-qr"]`); if (el) el.click(); else throw new Error("Payment Radio not found!");
+Without any arguments.</msg>
+<arg>${js}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.303324" elapsed="0.003837"/>
+</kw>
+<arg>${PAYMENT}</arg>
+<status status="PASS" start="2025-10-06T02:38:54.302760" elapsed="0.004592"/>
+</kw>
+<arg>10x</arg>
+<arg>0.5s</arg>
+<arg>Shadow root click payment</arg>
+<arg>${PAYMENT}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.302454" elapsed="0.004963"/>
+</kw>
+<arg>qr</arg>
+<status status="PASS" start="2025-10-06T02:38:54.302111" elapsed="0.005379"/>
+</kw>
+<kw name="Coupon" owner="checkout_pages">
+<kw name="Shadow root coupon" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:54.308800" level="INFO">Executing JavaScript:
+const btn = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-coupon-toggle"]');if (btn) {btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));} else {throw new Error("Coupon dropdown button not found!");}
+Without any arguments.</msg>
+<arg>const btn = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-coupon-toggle"]');</arg>
+<arg>if (btn) {</arg>
+<arg>btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("Coupon dropdown button not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.308386" elapsed="0.005371"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.308102" elapsed="0.005861"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:54.307675" elapsed="0.006335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:55.314476" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:54.314116" elapsed="1.000452"/>
+</kw>
+<kw name="Select coupon" owner="checkout_pages">
+<kw name="Select coupon name" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:55.315570" level="INFO">Executing JavaScript:
+const btn = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('[data-testid="checkout-coupon-item-General12345"]');if (btn) {btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));} else {throw new Error("Coupon dropdown button not found!");}
+Without any arguments.</msg>
+<arg>const btn = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('[data-testid="checkout-coupon-item-General12345"]');</arg>
+<arg>if (btn) {</arg>
+<arg>btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));</arg>
+<arg>} else {</arg>
+<arg>throw new Error("Coupon dropdown button not found!");</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:55.315268" elapsed="0.003841"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:55.315066" elapsed="0.004176"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:55.314741" elapsed="0.004563"/>
+</kw>
+<kw name="Apply coupon" owner="checkout_pages">
+<kw name="Shadow root apply coupon" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:55.320375" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[id="btn-apply-coupon"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[id="btn-apply-coupon"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:55.320081" elapsed="0.002375"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:55.319849" elapsed="0.002692"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:55.319468" elapsed="0.003114"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.322998" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:55.322673" elapsed="1.000413"/>
+</kw>
+<kw name="Assertion" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.323879" level="INFO">Executing JavaScript:
+return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-subtotal"]')?.innerText || '0';
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:56.326352" level="INFO">${subtotal_text} = THB 510.00</msg>
+<var>${subtotal_text}</var>
+<arg>return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-subtotal"]')?.innerText || '0';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.323589" elapsed="0.002794"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.326784" level="INFO">Executing JavaScript:
+return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-shipping"]')?.innerText || '0';
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:56.328432" level="INFO">${shipping_text} = THB 50.00</msg>
+<var>${shipping_text}</var>
+<arg>return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-shipping"]')?.innerText || '0';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.326495" elapsed="0.001965"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.328827" level="INFO">Executing JavaScript:
+return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-discount"]')?.innerText || '0';
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:56.330643" level="INFO">${discount_text} = 0</msg>
+<var>${discount_text}</var>
+<arg>return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-discount"]')?.innerText || '0';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.328563" elapsed="0.002107"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.331035" level="INFO">Executing JavaScript:
+return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-vat"]')?.innerText || '0';
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:56.332419" level="INFO">${vat_text} = THB 36.00</msg>
+<var>${vat_text}</var>
+<arg>return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-vat"]')?.innerText || '0';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.330769" elapsed="0.001677"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.332791" level="INFO">Executing JavaScript:
+return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-total"]')?.innerText || '0';
+Without any arguments.</msg>
+<msg time="2025-10-06T02:38:56.334065" level="INFO">${total_text} = THB 596.00</msg>
+<var>${total_text}</var>
+<arg>return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-total"]')?.innerText || '0';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.332542" elapsed="0.001552"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.334476" level="INFO">${subtotal} = 510.0</msg>
+<var>${subtotal}</var>
+<arg>float(re.sub(r'[^0-9.]', '', '''${subtotal_text}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.334194" elapsed="0.000305"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.334789" level="INFO">${shipping} = 50.0</msg>
+<var>${shipping}</var>
+<arg>float(re.sub(r'[^0-9.]', '', '''${shipping_text}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.334587" elapsed="0.000223"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.335129" level="INFO">${discount} = 0</msg>
+<var>${discount}</var>
+<arg>float(re.sub(r'[^0-9.-]', '', '''${discount_text}''')) if '${discount_text}'!='0' else 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.334891" elapsed="0.000259"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.335400" level="INFO">${vat} = 36.0</msg>
+<var>${vat}</var>
+<arg>float(re.sub(r'[^0-9.]', '', '''${vat_text}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.335229" elapsed="0.000191"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.335707" level="INFO">${total} = 596.0</msg>
+<var>${total}</var>
+<arg>float(re.sub(r'[^0-9.]', '', '''${total_text}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.335532" elapsed="0.000195"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-10-06T02:38:56.336001" level="INFO">${expected} = 596.0</msg>
+<var>${expected}</var>
+<arg>round(${subtotal} - ${discount} + ${shipping} + ${vat}, 2)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.335802" elapsed="0.000219"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Subtotal=${subtotal}, Shipping=${shipping}, VAT=${vat}, Discount=${discount}, Total=${total}, Expected=${expected}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.336100" elapsed="0.000245"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<arg>${total}</arg>
+<arg>${expected}</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.336426" elapsed="0.000159"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:56.323277" elapsed="0.013359"/>
+</kw>
+<kw name="Place order" owner="checkout_pages">
+<kw name="Shadow root place order" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:56.337309" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[id="btn-place-order"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[id="btn-place-order"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.337080" elapsed="0.003380"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:56.336923" elapsed="0.003628"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:56.336732" elapsed="0.003863"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-06T02:38:57.341351" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-06T02:38:56.340693" elapsed="1.000749"/>
+</kw>
+<kw name="Paid confirm" owner="checkout_pages">
+<kw name="Shadow root paid qr" owner="checkout_pages">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-06T02:38:57.342450" level="INFO">Executing JavaScript:
+const el = document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('button[id="btn-confirm-qr"]');if (el &amp;&amp; !el.checked) el.click();
+Without any arguments.</msg>
+<arg>const el = document.querySelector('[data-testid="shadow-host"]')</arg>
+<arg>.shadowRoot.querySelector('button[id="btn-confirm-qr"]');</arg>
+<arg>if (el &amp;&amp; !el.checked) el.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-06T02:38:57.342163" elapsed="0.003933"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:57.341955" elapsed="0.004265"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:57.341610" elapsed="0.004666"/>
+</kw>
+<status status="PASS" start="2025-10-06T02:38:37.546795" elapsed="19.799602"/>
+</test>
+<status status="PASS" start="2025-10-06T02:38:37.359184" elapsed="19.987802"/>
+</suite>
+<status status="PASS" start="2025-10-06T02:38:37.349247" elapsed="19.998158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="TestCase1 Autocomplete" id="s1-s1" pass="1" fail="0" skip="0">Tests.TestCase1 Autocomplete</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
