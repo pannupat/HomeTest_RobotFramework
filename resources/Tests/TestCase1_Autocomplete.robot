@@ -68,5 +68,7 @@ Test Case 1_Autocomplete
 
 # Paid Confirm
     Paid confirm
+    Sleep                        1     
+    Close Browser
 
 
