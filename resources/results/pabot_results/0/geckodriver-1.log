@@ -1,35 +1,21 @@
-1759693117637	geckodriver	INFO	Listening on 127.0.0.1:56081
-1759693120691	mozrunner::runner	INFO	Running command: "C:\\Users\\User\\.cache\\selenium\\firefox\\win64\\143.0.4\\firefox.exe" "--marionette" "--remote-debugging ... 82" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilexHIeaV"
+1759698406553	geckodriver	INFO	Listening on 127.0.0.1:56265
+1759698409617	mozrunner::runner	INFO	Running command: "C:\\Users\\User\\.cache\\selenium\\firefox\\win64\\143.0.4\\firefox.exe" "--marionette" "--remote-debugging ... 66" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile2ajhB2"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1759693121309	Marionette	INFO	Marionette enabled
-1759693121386	Marionette	INFO	Listening on port 56181
-Read port: 56181
-WebDriver BiDi listening on ws://127.0.0.1:56082
-1759693121431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1759698409938	Marionette	INFO	Marionette enabled
+1759698410007	Marionette	INFO	Listening on port 56352
+WebDriver BiDi listening on ws://127.0.0.1:56266
+Read port: 56352
+1759698410085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.error: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIContentSniffer.getMIMETypeFromContent]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource:///modules/FaviconLoader.sys.mjs :: onStopRequest :: line 300"  data: no]
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://training-platform2.doppio-tech.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://training-platform2.doppio-tech.com."
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/success/1032" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/1032?method=qr" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/checkout?ids=514" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/cart" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/products/11" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/signin" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/success/1032" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/1032?method=qr" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/checkout?ids=514" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/cart" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/products/11" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/signin" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/success/1032" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/payment/1032?method=qr" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/checkout?ids=514" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/cart" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/products/11" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://training-platform2.doppio-tech.com/signin" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
-Exiting due to channel error.
+1759698427252	Marionette	INFO	Stopped listening on port 56352
+Dynamically enable window occlusion 1
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 105: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 102: Error: Unknown callback
