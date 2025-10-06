@@ -9,7 +9,7 @@ Resource   ../keywordpages/product_pages.robot
 Resource   ../../variables.robot
     
 *** Test Cases ***
-Test Case 2_Search
+Test Case 2 Search
     Open Browser               ${WEB_URL}    #เปิดเว็บไซต์
     Set Selenium Timeout       ${TIMEOUT}
 # Go to Login

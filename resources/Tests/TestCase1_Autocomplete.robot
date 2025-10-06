@@ -8,7 +8,7 @@ Resource   ../keywordpages/checkout_pages.robot
 Resource   ../../variables.robot
     
 *** Test Cases ***
-Test Case 1_Autocomplete
+Test Case 1 Autocomplete
     Open Browser               ${WEB_URL}    #เปิดเว็บไซต์
     Set Selenium Timeout       ${TIMEOUT}
 # Go to Login
