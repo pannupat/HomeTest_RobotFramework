@@ -16,61 +16,61 @@ Test Case 2 Search
     Account button                           #คลิกปุ่ม Account
     Nav account link                         #คลิก Element ไปที่หน้า Login
 # Login
-    Email                      ${TEST_EMAIL}
-    Password                   ${TEST_PASSWORD}
+    Input_email_fill                      ${TEST_EMAIL}
+    Input_password_fill                   ${TEST_PASSWORD}
     Sleep                        1
-    Remember
-    Submit login
+    Cick_remember_checkbox
+    Cick_button_submit_login
     Sleep                        1
 # SearchProduct
-    SearchProduct               Ceramic Mug
+    Search_on_product_fill               Ceramic Mug
     Sleep                       1
-    SearchButton
+    CLick_search_button
     Sleep                       1
     ClickCeramicMug
 # AddProductToCart
-    Select product color        Gray
-    Shadow root input qty       3
-    Add to cart button
+    Select_product_color        Gray
+    Input_product_quantity       3
+    Click_add_to_cart_button
 # Go to Cart
-    Cart
+    Click_cart_icon
     Sleep                       1
 # Go to Checkout 
-    Select all in cart
-    Proceed to checkout
+    Click_select_all_checkbox
+    Click_proceed_to_checkout_button
+
 # Set Address
-    Add new address
-    First name                   Morty
-    Last name                    Smith
-    Address detail               123 Khonkean University 
+    CLick_add_new_address_button
+    Input_first_name_fill        Morty
+    Input_last_name_fill                    Smith
+    Input_address_detail_fill               123 Khonkean University 
     Sleep                        1
-    Select province              Bangkok
+    Select_province              Bangkok
     Sleep                        1
-    Select district              Phra Nakhon
+    Select_district              Phra Nakhon
     Sleep                        1
-    Select subdistrict           Bang Khun Phrom
+    Select_subdistrict           Bang Khun Phrom
     Sleep                        1
-    Postcode                     10200
+    Input_postcode_fill          10200
     Sleep                        1
-    Set as default
-    Save address
+    Click_set_as_default_checkbox
+    Click_save_address_button
 # Payment Method
-    Payment                      qr
+    Input_to_select_radio_payment         qr
 # Coupon
-    Coupon    
+    Click_select_coupon_button    
     Sleep                        1
-    Select coupon
-    Apply coupon
+    Click_select_coupon_button
+    Click_apply_coupon_button
     Sleep                        1
 # Assertions
     Assertion
 
 # PlaceOrder
-    Place order
+    Click_place_order_button
     Sleep                        1
 
 # Paid Confirm
-    Paid confirm
-    Sleep                        1   
+    Click_paid_confirm_button
+    Sleep                        1     
     Close Browser
-

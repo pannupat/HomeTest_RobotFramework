@@ -12,15 +12,15 @@ Account button
 Nav account link
     Click Element    ${NAVACCOUNTMENU} 
 
-Search product
+Search_on_product_fill
 ...    [Arguments]     ${SEARCH}
     Input Text    ${HOME_SEARCHBOX}    ${SEARCH}
     Wait Until Element Is Visible  ${WAITAUTOCOMPLETE}    ${TIMEOUT}
 
-Click autocomplete
+Wait_autocomplete_and_click
     Click Element    ${WAITAUTOCOMPLETE}
 
-Search button
+CLick_search_button
     Click Button    ${HOME_SEARCHBUTTON}
 
 

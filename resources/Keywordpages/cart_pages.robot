@@ -4,7 +4,7 @@ Resource   ../locators/cart_locators.robot
 Resource   ../../variables.robot
 
 ***Keywords***
-Cart
+Click_cart_icon
     Click Element       ${CART_BUTTON}
 
 Shadow root select all products
@@ -27,11 +27,11 @@ Shadow root add new address
     ...    if (el && !el.checked) el.click();
     ...    
 
-Select all in cart
+Click_select_all_checkbox
     Shadow root select all products
 
-Proceed to checkout
+Click_proceed_to_checkout_button
     Shadow root proceed to checkout
 
-Add new address
+CLick_add_new_address_button
     Shadow root add new address

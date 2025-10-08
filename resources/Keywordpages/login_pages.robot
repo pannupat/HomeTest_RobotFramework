@@ -21,6 +21,8 @@ Shadow root password
     ...      el.value = "${password}";
     ...      el.dispatchEvent(new Event('input', { bubbles: true }));
 
+
+
 Shadow root remember button
     [Arguments]    ${remember}
     Execute JavaScript
@@ -37,16 +39,16 @@ Shadow root login button
     ...      .click();
     ...   
     
-Email
+Input_email_fill
        [Arguments]    ${EMAIL}
        Shadow root email     ${EMAIL}
 
-Password
+Input_password_fill
        [Arguments]    ${PASSWORD}
        Shadow root password    ${PASSWORD}
 
-Remember
+Cick_remember_checkbox
        Shadow root remember button    ${LOGIN_REMEMBERME}
 
-Submit login
+Cick_button_submit_login
        Shadow root login button    ${LOGIN_BUTTON}

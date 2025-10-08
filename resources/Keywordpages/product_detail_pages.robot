@@ -50,15 +50,15 @@ Shadow root add to cart button
     ...    if (el) el.click(); else throw new Error("Add to cart button not found!");
     ...    
 
-Select product color
+Select_product_color
     [Arguments]    ${COLOR}
     Shadow root color button    ${COLOR}
 
-Input product quantity
+Input_product_quantity
     [Arguments]    ${VALUE}
     Shadow root input qty       ${VALUE}
 
 
-Add to cart button
+Click_add_to_cart_button
     ShadowRootAddToCartButton
 

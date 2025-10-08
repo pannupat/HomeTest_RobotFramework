@@ -140,12 +140,13 @@ Shadow root place order
 
 Assertion
     ${subtotal_text}=    Execute JavaScript    return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-subtotal"]')?.innerText || '0';
+    ${subtotal}=    Evaluate    float(re.sub(r'[^0-9.]', '', '''${subtotal_text}'''))
+
     ${shipping_text}=    Execute JavaScript    return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-shipping"]')?.innerText || '0';
     ${discount_text}=    Execute JavaScript    return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-discount"]')?.innerText || '0';
     ${vat_text}=         Execute JavaScript    return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-vat"]')?.innerText || '0';
     ${total_text}=       Execute JavaScript    return document.querySelector('[data-testid="shadow-host"]').shadowRoot.querySelector('#checkout-root [data-testid="checkout-total"]')?.innerText || '0';
 
-    ${subtotal}=    Evaluate    float(re.sub(r'[^0-9.]', '', '''${subtotal_text}'''))
     ${shipping}=    Evaluate    float(re.sub(r'[^0-9.]', '', '''${shipping_text}'''))
     ${discount}=    Evaluate    float(re.sub(r'[^0-9.-]', '', '''${discount_text}''')) if '${discount_text}'!='0' else 0
     ${vat}=         Evaluate    float(re.sub(r'[^0-9.]', '', '''${vat_text}'''))
@@ -162,60 +163,60 @@ Shadow root paid qr
     ...      .shadowRoot.querySelector('button[id="btn-confirm-qr"]');
     ...    if (el && !el.checked) el.click();
 
-First name
+Input_first_name_fill
     [Arguments]    ${FIRSTNAME}
     Shadow root first name    ${FIRSTNAME}
 
-Last name
+Input_last_name_fill
     [Arguments]    ${LASTNAME}
     Shadow root last name    ${LASTNAME}
 
-Address detail
+Input_address_detail_fill
     [Arguments]    ${ADDRESSDETAIL}
     Shadow root address details    ${ADDRESSDETAIL}
 
-Select province
+Select_province
     [Arguments]    ${PROVINCE}
     Shadow root select province    ${PROVINCE}
 
-Select district
+Select_district
     [Arguments]    ${DISTRICT}
     Shadow root select district    ${DISTRICT}
 
-Select subdistrict
+Select_subdistrict
     [Arguments]    ${SUBDISTRICT}
     Shadow root select subdistrict    ${SUBDISTRICT}
 
-Postcode
+Input_postcode_fill
     [Arguments]    ${POSTALCODE}
     Shadow root postcode    ${POSTALCODE}
 
-Set as default
+Click_set_as_default_checkbox
     Shadow root set as default
 
-Save address
+Click_save_address_button
     Shadow root save address
 
-Payment
+Input_to_select_radio_payment
     [Arguments]    ${PAYMENT}
     Wait Until Keyword Succeeds    10x    0.5s    Shadow root click payment    ${PAYMENT}
 
-Coupon
+Click_select_coupon_button
     Shadow root coupon
 
 
-Apply coupon
+Click_apply_coupon_button
     Shadow root apply coupon
 
 
-Select coupon
+Click_select_coupon_name
     Select coupon name
    
 
-Place order
+Click_place_order_button
     Shadow root place order
 
-Paid confirm
+Click_paid_confirm_button
     Shadow root paid qr
 
 
